@@ -1,9 +1,13 @@
-# ![](https://raw.githubusercontent.com/cypress-io/cypress-icons/master/src/favicon/favicon.ico)Aprendizado Cypress. 
---------------------------------------------------------------------------------
+# ![](https://raw.githubusercontent.com/cypress-io/cypress-icons/master/src/favicon/favicon.ico)Aprendizado Cypress.   
+&nbsp;
+
+--------------------------------------------------------------------------------  
+&nbsp;
 
 
 ## Instalando Cypress.
---------------------------------------------------------------------------------
+--------------------------------------------------------------------------------  
+&nbsp;
 
 
 Antes de começar utilizar o cypress tenha certeza que tenha instalado o NodeJS.  
@@ -13,8 +17,8 @@ Agora precisa criar o arquivo package.json e para isso irei utilizar o comando: 
 &nbsp;
 
 ### Agora adicionando o cypress como dependência do projeto.  
---------------------------------------------------------------------------------
-
+--------------------------------------------------------------------------------  
+&nbsp;
 
 Utilizando o comando: `npm install cypress`.  
 &nbsp;
