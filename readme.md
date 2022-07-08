@@ -3,7 +3,7 @@
 
 --------------------------------------------------------------------------------  
 &nbsp;
-
+Aulas sobre o uso do cypress para testes automatizados, assistindo curso via udemy.
 
 ## Instalando Cypress.
 --------------------------------------------------------------------------------  
