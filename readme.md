@@ -1,9 +1,9 @@
 # ![](https://raw.githubusercontent.com/cypress-io/cypress-icons/master/src/favicon/favicon.ico)Aprendizado Cypress.   
 &nbsp;
+Aulas sobre o uso do cypress para testes automatizados, assistindo curso via udemy.
 
 --------------------------------------------------------------------------------  
 &nbsp;
-Aulas sobre o uso do cypress para testes automatizados, assistindo curso via udemy.
 
 ## Instalando Cypress.
 --------------------------------------------------------------------------------  
