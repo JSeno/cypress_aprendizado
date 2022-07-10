@@ -6,6 +6,7 @@ it('Equality', () => {
     expect(a).to.equal(1);
     expect(a, 'Deveria ser 1').to.equal(1);
     expect(a).to.be.equal(1);
+    a.should('to.be.equal', 1);
     expect(a).not.to.be.equal('b');
 });
     
