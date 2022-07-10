@@ -1,11 +1,10 @@
-# ![](https://raw.githubusercontent.com/cypress-io/cypress-icons/master/src/favicon/favicon.ico)Aprendizado Cypress.   
+# ![Cypress](https://raw.githubusercontent.com/cypress-io/cypress-icons/master/src/favicon/favicon.ico) Aprendizado Cypress.   
 &nbsp;
 
---------------------------------------------------------------------------------  
+  
+Aulas sobre o uso do cypress para testes automatizados, assistindo curso via udemy.&nbsp;  
+&nbsp;  
 
-Aulas sobre o uso do cypress para testes automatizados, assistindo curso via udemy.  
-
-&nbsp;
 
 ## Instalando Cypress.
 --------------------------------------------------------------------------------  
@@ -31,10 +30,10 @@ Mas para o curso estarei utilizando a versão 3.6 com o comando: `npm install cy
 Para abrir o cypress precisa navegar na pasta: `node_modules/cypress/.bin/cypress open`  
 &nbsp;
 
-Caso seja necessário no Windows, precisa adicionar um comando no arquivo `package.json`:  
+Caso seja necessário no Windows, precisa adicionar um comando no arquivo `package.json`.    
 &nbsp;
 
- ```
+ ```json
  "scripts": {
         "cypress:open": "cypress open";
 }
@@ -42,5 +41,5 @@ Caso seja necessário no Windows, precisa adicionar um comando no arquivo `packa
 
 &nbsp;
 
-Dentro da pasta raiz agora rode o comando:`npm run cypress:open`  
+Dentro da pasta raiz agora rode o comando: `npm run cypress:open`  
 &nbsp;
