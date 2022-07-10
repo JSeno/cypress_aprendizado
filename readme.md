@@ -35,7 +35,7 @@ Caso seja necessário no Windows, precisa adicionar um comando no arquivo `packa
 
  ```json
  "scripts": {
-        "cypress:open": "cypress open";
+        "cypress:open": "cypress open",
 }
 ```  
 
