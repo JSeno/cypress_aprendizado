@@ -43,3 +43,11 @@ Caso seja necessário no Windows, precisa adicionar um comando no arquivo `packa
 
 Dentro da pasta raiz agora rode o comando: `npm run cypress:open`  
 &nbsp;
+
+# Métodos que aprendi até agora:&nbsp;  
+- `cy.visit('Página que quero visitar')` é própriamente a página que o cypress irá abrir para os testes.
+- `cy.get(#class=id)` é a busca de um elemento na página pelo id de sua classe, esse método pode vir seguido de vários métodos como por exemplo .click().
+- `cy.pause()` é uma pausa no teste que eu posso clicar para continuar ou fazendo passo a passo o teste.
+- `cy.debug()` mostra um debug no console atráves do inspetor de elementos.
+- `.should()` é um assert, devo jogar quais parâmetros esperar e ver se a resposta do cypress é o que eu espero.
+
