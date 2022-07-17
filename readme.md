@@ -1,7 +1,10 @@
 # ![Cypress](https://raw.githubusercontent.com/cypress-io/cypress-icons/master/src/favicon/favicon.ico) Aprendizado Cypress.   
 &nbsp;
 
-  
+
+[]: # Language: markdown
+[]: # Path: readme.md
+
 Aulas sobre o uso do cypress para testes automatizados, assistindo curso via udemy.&nbsp;  
 &nbsp;  
 
