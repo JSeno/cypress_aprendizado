@@ -51,3 +51,16 @@ Dentro da pasta raiz agora rode o comando: `npm run cypress:open`
 - `cy.debug()` mostra um debug no console atráves do inspetor de elementos.
 - `.should()` é um assert, devo jogar quais parâmetros esperar e ver se a resposta do cypress é o que eu espero.
 
+
+# Problemas com o Cypress.
+Pode ser que quando puxar o repositório novamente o cypress não funcione.&nbsp;  
+Nas minhas tentativas após formatar meu ssd de fazer funcionar tentei reinstalar várias vezes o cypress mas o mesmo,
+estava mantendo um cachê da do caminho de instalação antigo mesmo puxando o repositório novamente.&nbsp;  
+Eu tentei por ínumeras vezes reinstalar o cypress atráves do comando `npm i cypress` até que funcionou mas procurando na internet,
+me deparei com algumas situações que podem resolver isso com os comandos:
+
+ ```text
+    npm uninstall -D cypress -g
+    npm install cypress --save-dev
+    npm cypress install --force 
+ ```
