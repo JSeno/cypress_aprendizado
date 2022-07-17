@@ -1,7 +1,7 @@
 {
   "name": "cypress_aprendizado",
   "version": "1.0.0",
-  "description": "",
+  "description": "&nbsp;",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,5 +13,13 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^3.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSeno/cypress_aprendizado.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JSeno/cypress_aprendizado/issues"
+  },
+  "homepage": "https://github.com/JSeno/cypress_aprendizado#readme"
 }

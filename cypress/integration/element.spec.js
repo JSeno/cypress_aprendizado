@@ -4,6 +4,12 @@
 
 // describe é um grupo de testes, ou seja, um conjunto de testes.
 describe('Word with basic elements', () => {
+    // Hooks são funções que são executadas antes e depois de cada teste.
+    before(() => {
+        cy.visit('https://www.wcaquino.me/cypress/componentes.html')
+    })
+
+
     // o it é um teste, ou seja, um caso de teste.
     it('Text', () => {
         cy.visit('https://www.wcaquino.me/cypress/componentes.html')
