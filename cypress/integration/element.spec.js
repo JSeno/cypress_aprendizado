@@ -5,14 +5,25 @@
 // describe é um grupo de testes, ou seja, um conjunto de testes.
 describe('Word with basic elements', () => {
     // Hooks são funções que são executadas antes e depois de cada teste.
+    
+    // o before nesse caso é executado antes de todos os testes. 
     before(() => {
         cy.visit('https://www.wcaquino.me/cypress/componentes.html')
     })
 
+    // o beforeEach é executado antes de cada teste.
+    // beforeEach(() => {
+    //     cy.visit('https://www.wcaquino.me/cypress/componentes.html')
+    // })
+
+    // beforeEach(() => {
+    //     cy.reload()
+    // })
+
 
     // o it é um teste, ou seja, um caso de teste.
     it('Text', () => {
-        cy.visit('https://www.wcaquino.me/cypress/componentes.html')
+        
 
         // o get('Aqui coloco uma busca') o should é para verificar se o elemento existe.
         // Essa função está buscando no corpo se existe uma palavra com o texto 'Cuidado'.
@@ -25,7 +36,7 @@ describe('Word with basic elements', () => {
     })
 
     it('Links', () => {
-        cy.visit('https://www.wcaquino.me/cypress/componentes.html')
+        
         cy.get('[href="#"]').click()
         cy.get('#resultado').should('have.text', 'Voltou!')
 
