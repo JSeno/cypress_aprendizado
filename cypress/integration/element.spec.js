@@ -46,4 +46,25 @@ describe('Word with basic elements', () => {
 
     })
 
+    it.only('Text Fields', () => {
+        cy.get('#formNome').type('Cypress Test')
+        cy.get('#formNome').should('have.value', 'Cypress Test')
+
+        cy.get('#elementosForm\\:sugestoes') // Aqui devo utilizar \\ para que o cypress reconheça os : 
+            .type('textarea')
+            .should('have.value', 'textarea')
+
+        cy.get('#tabelaUsuarios > :nth-child(2) > :nth-child(1) > :nth-child(6) > input')
+            .type('???')
+
+        cy.get('[data-cy=dataSobrenome]')
+            .type('Text12345{backspace}{backspace}')
+            .should('have.value', 'Text123')
+
+        cy.get('#elementosForm\\:sugestoes') // Aqui devo utilizar \\ para que o cypress reconheça os : 
+            .clear()
+            .type('Erro{selectall}acerto', {delay:100})
+            .should('have.value', 'acerto')
+    })
+
 })
