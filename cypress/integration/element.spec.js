@@ -46,7 +46,7 @@ describe('Word with basic elements', () => {
 
     })
 
-    it.only('Text Fields', () => {
+    it('Text Fields', () => {
         cy.get('#formNome').type('Cypress Test')
         cy.get('#formNome').should('have.value', 'Cypress Test')
 
@@ -65,6 +65,17 @@ describe('Word with basic elements', () => {
             .clear()
             .type('Erro{selectall}acerto', {delay:100})
             .should('have.value', 'acerto')
+    })
+
+    it.only('Checkbox', () => {
+        cy.get('#formComidaPizza')
+            .click()
+            .should('be.checked')
+
+        // Para multiplo clicks tem que passar dentro do click.({multiple:true})
+        cy.get('[name=formComidaFavorita]').click({multiple:true})
+        cy.get('[name=formComidaPizza]').should('not.be.checked')
+        cy.get('#formComidaVegetariana').should('be.checked')
     })
 
 })
