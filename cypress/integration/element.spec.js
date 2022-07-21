@@ -16,12 +16,13 @@ describe('Word with basic elements', () => {
     //     cy.visit('https://www.wcaquino.me/cypress/componentes.html')
     // })
 
-    // beforeEach(() => {
-    //     cy.reload()
-    // })
+    // Antes de cada teste faz reload da página
+    beforeEach(() => {
+        cy.reload()
+    })
 
 
-    // o it é um teste, ou seja, um caso de teste.
+    // o it é um teste, ou seja, um caso de teste cuidado caso seja it.only, só ele será executado.
     it('Text', () => {
         
 
@@ -46,7 +47,7 @@ describe('Word with basic elements', () => {
 
     })
 
-    it.only('Text Fields', () => {
+    it('Text Fields', () => {
         cy.get('#formNome').type('Cypress Test')
         cy.get('#formNome').should('have.value', 'Cypress Test')
 
@@ -65,6 +66,19 @@ describe('Word with basic elements', () => {
             .clear()
             .type('Erro{selectall}acerto', {delay:100})
             .should('have.value', 'acerto')
+    })
+
+    it('RadioButton', () => {
+
+        cy.get('#formSexoFem')
+            .click()
+            .should('be.checked')
+
+        cy.get('#formSexoMasc')
+            .should('not.be.checked')
+
+        cy.get("[name='formSexo']").should('have.length', 2)
+
     })
 
 })
